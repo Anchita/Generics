@@ -1,0 +1,12 @@
+C:\Users\anchita.arora\source\repos\MyList\MyList\bin\Debug\MyList.dll
+C:\Users\anchita.arora\source\repos\MyList\MyList\bin\Debug\MyList.pdb
+C:\Users\anchita.arora\source\repos\MyList\MyList\bin\Debug\nunit.framework.dll
+C:\Users\anchita.arora\source\repos\MyList\MyList\bin\Debug\nunit.framework.pdb
+C:\Users\anchita.arora\source\repos\MyList\MyList\bin\Debug\nunit.framework.xml
+C:\Users\anchita.arora\source\repos\MyList\MyList\obj\Debug\MyList.csprojAssemblyReference.cache
+C:\Users\anchita.arora\source\repos\MyList\MyList\obj\Debug\MyList.csproj.CoreCompileInputs.cache
+C:\Users\anchita.arora\source\repos\MyList\MyList\obj\Debug\MyList.csproj.CopyComplete
+C:\Users\anchita.arora\source\repos\MyList\MyList\obj\Debug\MyList.dll
+C:\Users\anchita.arora\source\repos\MyList\MyList\obj\Debug\MyList.pdb
+C:\Users\anchita.arora\source\repos\MyList\MyList\bin\Debug\Shouldly.dll
+C:\Users\anchita.arora\source\repos\MyList\MyList\bin\Debug\Shouldly.pdb

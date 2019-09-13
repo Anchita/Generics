@@ -6,11 +6,11 @@ using NUnit.Framework;
 
 namespace MyList
 {
-    public class Program
+    public class Program<T>
     {
-        MyList<int> myList = new MyList<int>();
+        MyList<T> myList = new MyList<T>();
  
-        public void Add(int item)
+        public void Add(T item)
         {
             myList.AddToList(item);
         }
@@ -20,7 +20,7 @@ namespace MyList
             return this.myList.NumberofItems();
         }
 
-        public int GetListItemOnIndex(int index)
+        public T GetListItemOnIndex(int index)
         {
             return myList.GetItemOnIndex(index);
         }
@@ -29,28 +29,46 @@ namespace MyList
     [TestFixture]
     public class MyTests
     {
-        private Program sut;
+        private Program<int> _intList;
+        private Program<String> _stringList;
 
         [SetUp]
         public void SetUp()
         {
-            sut = new Program();
+            _intList = new Program<int>();
+            _stringList = new Program<string>();
         }
 
         [TestCase(1)]
-        public void ItemShouldBeAdded(int i)
+        public void ItemShouldBeAddedToIntegerList(int i)
         {
-            this.sut.Add(i);
-            Assert.AreEqual(1, sut.ListSize());
+            this._intList.Add(i);
+            Assert.AreEqual(1, _intList.ListSize());
         }
 
         [TestCase(2)]
-        public void CorrectItemShouldbeRetrievd(int i)
+        public void CorrectItemShouldbeRetrievdFromIntegerList(int i)
         {
-            this.sut.Add(5);
-            this.sut.Add(15);
-            this.sut.Add(25);
-            Assert.AreEqual(25, sut.GetListItemOnIndex(i));
+            this._intList.Add(5);
+            this._intList.Add(15);
+            this._intList.Add(25);
+            Assert.AreEqual(25, _intList.GetListItemOnIndex(i));
+        }
+
+        [TestCase("Anchita")]
+        public void ItemShouldBeAddedToStringList(string s)
+        {
+            this._stringList.Add(s);
+            Assert.AreEqual(1, _stringList.ListSize());
+        }
+
+        [TestCase(1)]
+        public void CorrectItemShouldbeRetrievdFromStringList(int i)
+        {
+            this._stringList.Add("Anchita");
+            this._stringList.Add("Japji");
+            this._stringList.Add("Amrath");
+            Assert.AreEqual("Japji", _stringList.GetListItemOnIndex(i));
         }
     }
 
